@@ -1,0 +1,72 @@
+<!-- 
+Todo:
+-Center home and menu elements.
+-Organize contact elements.
+-Bold Contact Us form text.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+</head>
+<body>
+	<div id="title">
+		<h1>Resutoran</h1>
+	</div>
+	<div id="navigation">
+		<hr/>
+		<p>
+			<a href="home.html" target="_blank">Home</a>
+			<a href="menu.html" target="_blank">Menu</a>
+			<a href="contactUs.html" target="_blank">Contact Us</a>
+		</p>
+		<hr/>
+	</div>
+	<form action="submit.html" method="POST">
+		<label for="name">Name:</label><br/>
+		<input type="text" id="name" name="name"><br/>
+		<label for="email">Email:</label><br/>
+		<input type="text" id="email" name="email"><br/>
+		<label for="phone">Phone:</label><br/>
+		<input type="phone" id="phone" name="phone"><br/>
+		<label for="reason">Reason for Inquiry:</label><br/>
+		<select id="reason" name="reason">
+			<option value="catering" selected>Catering</option>
+			<option value="private">Private Party</option>
+			<option value="feedback">Feedback</option>
+			<option value="other">Other</option>
+		</select><br/>
+		<label for="additionalInfo">Additional Information:</label><br/>
+		<textarea id="additionalInfo"></textarea><br/>
+		<legend>Have you been here before?</legend>
+		<input type="radio" id="choice1" name="beenHere">
+			<label for="choice1">Yes</label>
+		<input type="radio" id="choice2" name="beenHere">
+			<label for="choice2">No</label>	<br/>
+		<legend>Best days to contact you:</legend>
+		<input type="checkbox" id="mon" name="contactDays" value="mon">
+			<label for="mon">M</label>
+		<input type="checkbox" id="tues" name="contactDays" value="tues">
+			<label for="tues">T</label>
+		<input type="checkbox" id="wed" name="contactDays" value="wed">
+			<label for="wed">W</label>
+		<input type="checkbox" id="thur" name="contactDays" value="thur">
+			<label for="thur">Th</label>
+		<input type="checkbox" id="fri" name="contactDays" value="fri">
+			<label for="fri">F</label><br/>
+		<input type="submit" name="submit" value="Send Request">
+	</form>
+	<div id="footer">
+		<hr/>
+		<footer>
+			<p>
+				Nan St, Nowhere, KS, 00404
+			</p>
+			<p>
+				404-404-4040
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
