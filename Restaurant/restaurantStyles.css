@@ -1,0 +1,123 @@
+/*
+* Common elements across all pages.
+*/
+h1{
+	font-family: Times New Roman;
+	font-size: 30px;
+	line-height: 50px;
+	/*border: 20 px solid white;*/
+	margin: 10px;
+	color:#0B486B;
+	text-align: center;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif, Times New Roman;
+	background-color: #CFF09E;
+}
+
+hr{
+	border-top: 3px double #3B8686;
+}
+
+h2{
+	font-size: 16px;
+	line-height: 40px;
+	color: #3B8686;
+}
+
+#top-hr{
+	margin-top: 0px;
+}
+
+#title{
+	background-color:#A8DBA8;
+}
+
+#navigation{
+	font-size: 16px;
+	background-color:#A8DBA8;
+}
+
+#footer{
+	font-size: 12px;
+	background-color:#A8DBA8;
+}
+
+/*
+*Used instead of inline for alignment. HTML5 no longer supports align.
+*/
+#homeImg{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+a{
+	font-family: serif;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a:link{
+	color: #3B8686;
+}
+
+a:hover{
+	font-weight:bold;
+	color: #CFF09E;
+}
+
+a:active{
+	text-decoration: none;
+	color: #79BD9A;
+}
+
+a:visited{
+	color: #0B486B;
+}
+
+table{
+	border: 1px solid #292533;
+	margin-left:auto;
+	margin-right:auto;
+	border-spacing: 0px;
+}
+	
+table{
+	width: 75%;
+}
+	
+td, th{
+	height: 30px;
+}
+th{
+	text-align:left;
+}
+tr:nth-child(even){
+	background-color: #A8DBA8;
+}
+
+.nav-tabs{
+	border-bottom:none;
+}
+
+.nav-tabs > li > .nav-link.active{
+	background-color: #CFF09E;
+}
+
+.nav-tabs > li > .nav-link{
+	border-bottom:none;
+}
+
+#nav-UL{	
+	border-bottom: 3px double #3B8686;
+}
+
+#h1-header{
+	font-size:20px;
+}
+
+.carousel-item.active {
+    display:block;
+}

@@ -1,0 +1,141 @@
+<!-- 
+Todo:
+-Center home and menu elements.
+-Organize contact elements.
+-Bold Contact Us form text.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<style>
+/* Styling properties for forms: */
+
+input[type=text]{
+	background-color: #CFF09E;
+	border: 2px solid #0B486B;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+fieldset{
+	background-color: #CFF09E;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input, label {
+	font-size: 16px;
+	font-family: Arial, Helvetica, serif;
+	font-weight: bold;
+}
+
+legend{
+	font-size: 16px;
+	font-family: Arial, Helvetica, serif;
+	font-weight: bold;
+}
+
+select{
+	background-color: #CFF09E;
+	width: 100%;
+	padding: 12px, 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #0B486B;
+	border-radius: 3px;
+	background-color: #CFF09E;
+	resize: none;
+}
+
+input, submit{
+	background-color: #3B8686;
+	border: none;
+	color: white;
+	padding: 12px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+</style>
+</head>
+<body>
+	<div id="title">
+		<h1>Resutoran</h1>
+		<div class="page-header">
+			<h1 id="h1-header">New Location Opening Soon!!!</h1>      
+		</div>
+	</div>
+	<div id="navigation">
+		<hr id="top-hr"/>
+		<ul id="nav-UL" class="nav nav-tabs">
+			<li class="nav-item"><a class="nav-link" href="home.html" target="_blank"><span class="glyphicon">&#8962;</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="menu.html" target="_blank">Menu</a></li>
+			<li class="nav-item"><a class="nav-link active" href="contactUs.html" target="_blank">Contact Us</a></li>
+		</ul>
+	</div>
+	<form action="submit.html" method="POST">
+		<label for="name">Name:</label><br/>
+		<input type="text" id="name" name="name"><br/>
+		<label for="email">Email:</label><br/>
+		<input type="text" id="email" name="email"><br/>
+		<label for="phone">Phone:</label><br/>
+		<input type="phone" id="phone" name="phone"><br/>
+		<label for="reason">Reason for Inquiry:</label><br/>
+		<select id="reason" name="reason">
+			<option value="catering" selected>Catering</option>
+			<option value="private">Private Party</option>
+			<option value="feedback">Feedback</option>
+			<option value="other">Other</option>
+		</select><br/>
+		<label for="additionalInfo">Additional Information:</label><br/>
+		<textarea id="additionalInfo"></textarea><br/>
+		<legend>Have you been here before?</legend>
+		<input type="radio" id="choice1" name="beenHere">
+			<label for="choice1">Yes</label>
+		<input type="radio" id="choice2" name="beenHere">
+			<label for="choice2">No</label>	<br/>
+		<legend>Best days to contact you:</legend>
+		<input type="checkbox" id="mon" name="contactDays" value="mon">
+			<label for="mon">M</label>
+		<input type="checkbox" id="tues" name="contactDays" value="tues">
+			<label for="tues">T</label>
+		<input type="checkbox" id="wed" name="contactDays" value="wed">
+			<label for="wed">W</label>
+		<input type="checkbox" id="thur" name="contactDays" value="thur">
+			<label for="thur">Th</label>
+		<input type="checkbox" id="fri" name="contactDays" value="fri">
+			<label for="fri">F</label><br/>
+		<input type="submit" name="submit" value="Send Request">
+	</form>
+	<div id="footer">
+		<hr/>
+		<footer>
+			<p>
+				Nan St, Nowhere, KS, 00404
+			</p>
+			<p>
+				404-404-4040
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
