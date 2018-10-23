@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>JavaScript Project T-Shirt Order</title>
+<script>
+
+/*
+*  Function OrderTShirt
+*
+*  Inputs:
+*     selectedColor - initialized from the select tag with id="colorChoice"
+*     selectedStyle - initialized from the select tag with id="style"
+*     selectedSize  - initialized from the select tag with id="size"
+*
+*  Output:
+*      alert of the order message
+*
+*/
+function OrderTShirt(){
+
+   //initialize the input
+   var selectedColor = document.getElementById("colorChoice").value;
+   var selectedStyle = document.getElementById("style").value;
+   var selectedSize =  document.getElementById("size").value;
+   
+if(selectedStyle === 'Ladies V-Neck' && selectedSize === 'XS'){
+    alert("Selection is not available")   
+}  else {        
+        //If the style and size are not available, then concatenate the message that 
+        // the selection is not available instead of a price.
+        
+        // a t-shirt in any size is $9 except 2XL which is $11.
+        // a v-neck in adult sizes is $12 except the XS is not available
+        // a tech shirt in adult sizes is $13
+        var orderMessage = "Your order is:  Color = " + selectedColor 
+                            + "; Style = " + selectedStyle 
+                            + "; Size = " + selectedSize 
+                            + "; The price is $"; 
+        alert(orderMessage);
+    }   
+}
+
+</script>
+</head>
+
+<body>
+<p>
+<table>
+  <tr/>
+  <tr><th>Colors</th><th>Styles</th><th>Sizes</th></tr>
+  <tr><td>
+<select id="colorChoice">
+  <option value="gray">Gray</option>
+  <option value="gold">Gold</option>
+  <option value="red">Red</option>
+  <option value="pink">Pink</option>
+  <option value="white">White</option>
+  <option value="navy">Navy</option>
+  <option value="maroon">Maroon</option>
+  <option value="black">Black</option>
+  <option value="royalblue">Royal Blue</option>
+  <option value="limegreen">Lime Green</option>
+<select>
+   </td><td>
+<select id="style">
+  <option value="T-Shirt">T-Shirt</option>
+  <option value="Tech Shirt">Moisture Wicking Tech Shirt</option>
+  <option value="Ladies V-Neck">Ladies V-Neck - Adult sizes only</option>
+</select>
+   </td><td>
+<select id="size">
+  <option value="XS">Adult Extra Small</option>
+  <option value="S">Adult Small</option>
+  <option value="M">Adult Medium</option>
+  <option value="L">Adult Large</option>
+  <option value="XL">Adult Extra Large</option>
+  <option value="2XL">Adult 2X</option>
+</select>
+   </td></tr>
+   <tr/><tr><td>
+      <input type="button" 
+             value="Order T-Shirt" 
+             onclick="OrderTShirt();">
+   </td><td/><td/>
+</table>
+<p>
+</body>
+</html>

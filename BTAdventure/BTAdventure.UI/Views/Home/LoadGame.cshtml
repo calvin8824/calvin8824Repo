@@ -1,0 +1,42 @@
+﻿@model BTAdventure.UI.Models.PlayerGame
+@{
+    ViewBag.Title = "LoadGame";
+}
+<h1 class="rosa" style="text-align:center; font-size:xx-large;">Select A Save</h1>
+<div class="wireframe, goudy" style="text-align:center">
+    <div class="row margin-bottom">
+
+
+        @if (Model.Characters.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th style="text-align:center">@Model.Player.PlayerName's Characters:</th>
+                        <th style="text-align:center">Save State:</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                @foreach (var g in Model.Characters)
+                {
+                    <tbody>
+                        <hr />
+                        <tr>
+
+                            <hr />
+                            <td>@Html.ActionLink(g.CharacterName + " " + g.CharacterId, "Game", new { id = g.SceneId })</td>
+                            <td>@Html.ActionLink("Chapter: " + g.SceneId, "Game", new { id = g.SceneId })</td>
+                            @*@Html.ActionLink("Delete", "Delete", "Agent", new { id = agent.Identifier }, new { @class = "btn btn-danger" }) could add a delete*@
+
+                        </tr>
+                    </tbody>
+                }
+            </table>
+        }
+
+    </div>
+</div>
+
+
+

@@ -1,0 +1,109 @@
+/*
+* Common elements across all pages.
+*/
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #d5d2cb;
+}
+
+h1{
+	font-size: 20px;
+	line-height: 40px;
+	color: #44749d;
+}
+
+hr{
+	border-top: 3px double #5b7d87;
+}
+
+h2{
+	font-size: 14px;
+	line-height: 40px;
+	color: #5b7d87;
+}
+
+a{
+	font-family: serif;
+	text-decoration: underline;
+	font-weight: none;
+}
+
+a:link{
+	color: #44749d;
+}
+
+a:hover{
+	/* Original Color
+	color: #8c22328;
+	*/
+	color: #5b7d87;
+}
+
+a:active{
+	color: #8c22328;
+}
+
+/* Styling properties for forms: */
+
+input[type=text]{
+	background-color: #d5d2cb;
+	border: 2px solid #292533;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+fieldset{
+	background-color: #d5d2cb;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+input, label {
+	font-size: 16px;
+	font-family: Arial, Helvetica, serif;
+	font-weight: bold;
+}
+
+legend{
+	font-size: 16px;
+	font-family: Arial, Helvetica, serif;
+	font-weight: bold;
+}
+
+select{
+	background-color: #d5d2cb;
+	width: 100%;
+	padding: 12px, 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #44749d;
+	border-radius: 3px;
+	background-color: #d5d2cb;
+	resize: none;
+}
+
+input, submit{
+	background-color: #8c2238;
+	border: none;
+	color: white;
+	padding: 12px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+
+
+

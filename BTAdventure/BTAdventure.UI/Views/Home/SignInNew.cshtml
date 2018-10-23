@@ -1,0 +1,65 @@
+﻿@model BTAdventure.Models.Player
+@{
+    ViewBag.Title = "SignInNew";
+}
+
+<div class="wireframe">
+    <h2>Please Sign In</h2>
+    @using (Html.BeginForm("SignInNew", "Home", FormMethod.Post))
+    {
+        @Html.ValidationSummary()
+        <div class="form-row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    @Html.LabelFor(a => a.Name)
+                    @Html.TextBoxFor(a => a.Name, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(a => a.Name, "", new { @style = "color:red" })
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    @*@Html.LabelFor(a => a.Name)
+                        @Html.TextBoxFor(a => a.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(a => a.Name, "", new { @style = "color:red" })*@
+                    <label>Password</label>
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    @*@Html.LabelFor(a => a.Name)
+                        @Html.TextBoxFor(a => a.Name, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(a => a.Name, "", new { @style = "color:red" })*@
+                    <label>Confirm Password</label>
+                    <input type="text" />
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-outline-primary">Submit</button> @Html.ActionLink("Existing Player", "SignInExisting", "Home", new { @class = "btn-outline-primary" })
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    }
+
+</div>
+
+
+
+
+
+
+
+
+

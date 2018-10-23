@@ -1,0 +1,8 @@
+﻿@model BTAdventure.UI.Models.PlayerGame
+@{
+    ViewBag.Title = "MainMenu";
+}
+
+<h2>MainMenu</h2>
+@Html.ActionLink("New Game", "NewGame", "Home", new { id = Model.Player.PlayerId }, new { @class = "btn btn-outline-primary" })
+@Html.ActionLink("Load Game", "LoadGame", "Home", new { id = Model.Player.PlayerId }, new { @class = "btn btn-outline-primary" })
